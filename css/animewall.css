@@ -1,0 +1,394 @@
+
+
+/*==================  sec11 動態牆  ================*/
+
+
+/*==================    ================*/
+@media screen and (max-width: 767px){
+
+.wall{
+	width: 100%;
+	margin: auto;
+	font-size: 0;
+	padding: 10px 0; 
+}
+.wall_box{
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	font-size: 16px;
+	margin: 5px 10%;
+	padding: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #1a1a1a;
+	background-color: #2a2a2a;
+}
+.wall_box > a{
+	margin: 0 15px;
+}
+
+
+.wall_box_user{
+	height: 100px;
+}
+.wall_box_user > div{
+	height: 40px;
+	padding:5px 0;
+}
+.wall_box_user div div.imgbox{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+	margin-left: 15px;
+}
+.wall_box_user div a.person_title{
+	display: block;
+	line-height: 25px;
+	font-size: 20px;
+	padding-left: 70px;
+	color: #ccc;
+}
+.wall_box_user div p{
+	display: block;
+	height: 15px;
+	padding-left: 70px;
+	color: #888;
+}
+.wall_box_user > p{
+	line-height: 50px;
+	padding-left: 70px;
+	color: #aaa;
+}
+
+
+.wall_box_like a, .wall_box_like span{
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+	color:#333;
+}
+
+
+.wall_box_reply{
+	margin-top: 5px;
+}
+.wall_box_reply p{
+	display: block;
+	padding: 6px 6px;
+	color: #aaa;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 70px;
+	overflow: hidden;
+}
+.wall_box_reply > div{
+	height: 30px;
+	padding:3px 0;
+}
+.wall_box_reply div div.imgbox{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;	
+	margin-left: 25px;
+}
+.wall_box_reply div p.person_reply{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	color: #ddd;
+	font-size: 16px;
+}
+.wall_box_reply div p.person_reply span{
+	padding-left: 15px;
+	font-size: 12px;
+	color: #999;
+}
+
+} /*END of @media screen and (max-width: 767px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+.wall{
+	width: 80%;
+	margin: auto;
+	font-size: 0;
+	padding: 10px 0; 
+}
+.wall_box{
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	font-size: 16px;
+	margin: 5px 1%;
+	padding: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #1a1a1a;
+	background-color: #2a2a2a;
+}
+.wall_box > a{
+	margin: 0 15px;
+}
+
+
+.wall_box_user{
+	height: 100px;
+}
+.wall_box_user > div{
+	height: 40px;
+	padding:5px 0;
+}
+.wall_box_user div div.imgbox{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+	margin-left: 15px;
+}
+.wall_box_user div a.person_title{
+	line-height: 25px;
+	font-size: 20px;
+	padding-left: 15px;
+	color: #ccc;
+}
+.wall_box_user div p{
+	display: block;
+	height: 15px;
+	padding-left: 70px;
+	color: #888;
+}
+.wall_box_user > p{
+	line-height: 50px;
+	padding-left: 70px;
+	color: #aaa;
+}
+
+
+.wall_box_like{
+	margin: 0 15px;
+	height: 30px;
+	background-color: #363636;
+	line-height: 33px;
+	text-align: right;
+}
+.wall_box_like a{
+	height: 30px;
+	display: inline-block;
+	float: left;
+	padding: 0 8px;
+	color:#333;
+}
+.wall_box_like span{
+	padding: 0 8px;
+}
+
+
+.wall_box_reply{
+	margin-top: 5px;
+}
+.wall_box_reply p{
+	display: block;
+	padding: 6px 6px;
+	color: #aaa;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 70px;
+	overflow: hidden;
+}
+.wall_box_reply > div{
+	height: 30px;
+	padding:3px 0;
+}
+.wall_box_reply div div.imgbox{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;	
+	margin-left: 25px;
+}
+.wall_box_reply div p.person_reply{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	color: #ddd;
+	font-size: 16px;
+}
+.wall_box_reply div p.person_reply span{
+	padding-left: 15px;
+	font-size: 12px;
+	color: #999;
+}
+
+} /*END of @media  screen and (min-width: 768px) and (max-width: 991px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 992px){
+
+.wall{
+	width: 800px;
+	margin: auto;
+	font-size: 0;
+	padding: 10px 0; 
+}
+.wall_box{
+	width: 388px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin: 5px 5px;
+	padding: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #1a1a1a;
+	background-color: #2a2a2a;
+}
+.wall_box > a{
+	margin: 0 15px;
+	height: 290px;
+}
+
+
+.wall_box_user{
+	height: 100px;
+}
+.wall_box_user > div{
+	height: 40px;
+	padding:5px 0;
+}
+.wall_box_user div div.imgbox{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+	margin-left: 15px;
+}
+.wall_box_user div a.person_title{
+	line-height: 25px;
+	font-size: 20px;
+	padding-left: 15px;
+	color: #ccc;
+}
+.wall_box_user div p{
+	display: block;
+	height: 15px;
+	padding-left: 70px;
+	color: #888;
+}
+.wall_box_user > p{
+	line-height: 50px;
+	padding-left: 70px;
+	color: #aaa;
+}
+
+
+.wall_box_like{
+	width: 358px;
+	height: 30px;
+	margin: 0 15px;
+	background-color: #363636;
+	line-height: 33px;
+	text-align: right;
+}
+.wall_box_like a{
+	height: 30px;
+	display: inline-block;
+	float: left;
+	padding: 0 8px;
+	color:#333;
+}
+.wall_box_like span{
+	padding: 0 8px;
+}
+
+
+.wall_box_reply{
+	margin-top: 5px;
+}
+.wall_box_reply p{
+	display: block;
+	padding: 6px 6px;
+	color: #aaa;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 70px;
+	overflow: hidden;
+}
+.wall_box_reply > p{
+	width: 77%;
+}
+.wall_box_reply > div{
+	height: 30px;
+	padding:3px 0;
+}
+.wall_box_reply div div.imgbox{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;	
+	margin-left: 25px;
+}
+.wall_box_reply div p.person_reply{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	color: #ddd;
+	font-size: 16px;
+}
+.wall_box_reply div p.person_reply span{
+	padding-left: 15px;
+	font-size: 12px;
+	color: #999;
+}
+
+} /*END of @media  screen and (min-width: 992px)*/
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 1200px){
+
+
+
+} /*END of @media screen and (min-width: 1200px)*/
+

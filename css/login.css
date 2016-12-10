@@ -1,0 +1,487 @@
+
+/*==================    ================*/
+@media screen and (max-width: 767px){
+
+.login_outer{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 1000;
+}
+.login_wrapper{
+	position: absolute;
+	z-index: 20;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 282px;
+	height: 552px;
+	background-color: #fff;
+	font-size: 0;
+	border-radius: 5px;
+	border: 2px solid #aaa;
+}
+.login_wrapper .content{
+	margin: 10px;
+}
+.login_wrapper .login{
+	height: 240px;
+	padding: 10px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.login_wrapper .sign{
+	padding: 10px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.login_title{
+	width: 100px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 2px solid #bbb;
+	text-indent:0px;
+	padding: 0;
+}
+.login_wrapper .log_box{
+	width: 240px;
+	height: 54px;
+	font-size: 16px;
+	margin: auto;
+}
+
+.login_wrapper .log_box label{
+	display: block;
+	margin: auto;
+	padding: 2px 0 0 10px;
+}
+.login_wrapper input[type=text], .login_wrapper input[type=password], .login_wrapper input[type=email], .login_wrapper select {
+    width: 90%;
+    padding: 2px 10px;
+    margin: 6px auto;
+    display: block;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.login_wrapper input[type=text]:focus, .login_wrapper input[type=password]:focus, .login_wrapper input[type=email]:focus, .login_wrapper select:focus{
+    border: 1px solid transparent;
+    outline: 2px solid #A0C2F9;
+}
+.login_wrapper input[type=submit]{
+	padding: 0;
+	border:none;
+	display:inline-block;
+	margin: 0 10px;
+}
+.login_wrapper .btn_wrapper{
+	width: 240px;
+	margin: auto;
+	text-align: center;
+	padding: 2px 0;
+}
+.login .grey_btn, .sign .grey_btn{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+.login .blue_btn, .sign .blue_btn{
+	display: inline-block;
+	vertical-align: top;
+}
+.login_close{
+	position: absolute;
+	border-radius: 5px;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.login_close:before, .login_close:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 26px;
+	height: 2px;
+	background-color: #999;
+    transition: 0.2s;
+}
+.login_close:before{
+	transform: rotateZ(-45deg);
+}
+.login_close:after{
+	transform: rotateZ(45deg);
+}
+
+.login_close:hover{
+	background-color: #B40000;
+}
+.login_close:hover:before{
+	transform: rotateZ(135deg);
+	background-color: #fff;
+}
+.login_close:hover:after{
+	transform: rotateZ(225deg);
+	background-color: #fff;
+}
+.login .green_btn{
+	width: 180px;
+	margin: 6px auto;
+}
+} /*END of @media screen and (max-width: 767px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+.login_outer{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 10;
+}
+.login_wrapper{
+	position: absolute;
+	z-index: 20;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 554px;
+	height: 352px;
+	background-color: #fff;
+	font-size: 0;
+	border-radius: 5px;
+	border: 2px solid #aaa;
+}
+.login_wrapper .content{
+	margin: 10px;
+}
+.login_wrapper .login{
+	height: 300px;
+	padding: 10px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.login_wrapper .sign{
+	padding: 10px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.login_title{
+	width: 100px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 2px solid #bbb;
+	text-indent:0px;
+	padding: 0;
+}
+.login_wrapper .log_box{
+	width: 240px;
+	height: 74px;
+	font-size: 16px;
+	margin: auto;
+}
+
+.login_wrapper .log_box label{
+	display: block;
+	margin: auto;
+	padding: 10px 0 0 10px;
+}
+.login_wrapper input[type=text], .login_wrapper input[type=password], .login_wrapper input[type=email], .login_wrapper select {
+    width: 90%;
+    padding: 6px 10px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.login_wrapper input[type=text]:focus, .login_wrapper input[type=password]:focus, .login_wrapper input[type=email]:focus, .login_wrapper select:focus{
+    border: 1px solid transparent;
+    outline: 2px solid #A0C2F9;
+}
+.login_wrapper input[type=submit]{
+	padding: 0;
+	border:none;
+	display:inline-block;
+	margin: 0 10px;
+}
+.login_wrapper .btn_wrapper{
+	width: 240px;
+	margin: auto;
+	text-align: center;
+	padding: 3px 0;
+}
+.login .grey_btn, .sign .grey_btn{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+.login .blue_btn, .sign .blue_btn{
+	display: inline-block;
+	vertical-align: top;
+}
+.login_close{
+	position: absolute;
+	border-radius: 5px;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.login_close:before, .login_close:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 26px;
+	height: 2px;
+	background-color: #999;
+    transition: 0.2s;
+}
+.login_close:before{
+	transform: rotateZ(-45deg);
+}
+.login_close:after{
+	transform: rotateZ(45deg);
+}
+
+.login_close:hover{
+	background-color: #B40000;
+}
+.login_close:hover:before{
+	transform: rotateZ(135deg);
+	background-color: #fff;
+}
+.login_close:hover:after{
+	transform: rotateZ(225deg);
+	background-color: #fff;
+}
+.login .green_btn{
+	width: 180px;
+	margin: 10px auto;
+}
+
+} /*END of @media screen and (min-width: 768px) and (max-width: 991px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 992px){
+
+.login_outer{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 10;
+}
+.login_wrapper{
+	position: absolute;
+	z-index: 20;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 554px;
+	height: 352px;
+	background-color: #fff;
+	font-size: 0;
+	border-radius: 5px;
+	border: 2px solid #aaa;
+}
+.login_wrapper .content{
+	margin: 10px;
+}
+.login_wrapper .login{
+	height: 300px;
+	padding: 10px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.login_wrapper .sign{
+	padding: 10px;
+	border: 1px solid #bbb;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.login_title{
+	width: 100px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 2px solid #bbb;
+	text-indent:0px;
+	padding: 0;
+}
+.login_wrapper .log_box{
+	width: 240px;
+	height: 74px;
+	font-size: 16px;
+	margin: auto;
+}
+
+.login_wrapper .log_box label{
+	display: block;
+	margin: auto;
+	padding: 10px 0 0 10px;
+}
+.login_wrapper input[type=text], .login_wrapper input[type=password], .login_wrapper input[type=email], .login_wrapper select {
+    width: 90%;
+    padding: 6px 10px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.login_wrapper input[type=text]:focus, .login_wrapper input[type=password]:focus, .login_wrapper input[type=email]:focus, .login_wrapper select:focus{
+    border: 1px solid transparent;
+    outline: 2px solid #A0C2F9;
+}
+.login_wrapper input[type=submit]{
+	padding: 0;
+	border:none;
+	display:inline-block;
+	margin: 0 10px;
+}
+.login_wrapper .btn_wrapper{
+	width: 240px;
+	margin: auto;
+	text-align: center;
+	padding: 3px 0;
+}
+.login .grey_btn, .sign .grey_btn{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+.login .blue_btn, .sign .blue_btn{
+	display: inline-block;
+	vertical-align: top;
+}
+.login_close{
+	position: absolute;
+	border-radius: 5px;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.login_close:before, .login_close:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 26px;
+	height: 2px;
+	background-color: #999;
+    transition: 0.2s;
+}
+.login_close:before{
+	transform: rotateZ(-45deg);
+}
+.login_close:after{
+	transform: rotateZ(45deg);
+}
+
+.login_close:hover{
+	background-color: #B40000;
+}
+.login_close:hover:before{
+	transform: rotateZ(135deg);
+	background-color: #fff;
+}
+.login_close:hover:after{
+	transform: rotateZ(225deg);
+	background-color: #fff;
+}
+.login .green_btn{
+	width: 180px;
+	margin: 10px auto;
+}
+
+} /*END of @media screen and (min-width: 992px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 1200px){
+
+
+
+} /*END of @media screen and (min-width: 1200px)*/
+

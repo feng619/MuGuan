@@ -1,0 +1,734 @@
+
+
+
+/*==================    ================*/
+@media screen and (max-width: 767px){
+
+section{
+	margin: auto;
+}
+
+.head4{
+	width: 100%;
+	height: 200px;
+	background:url(https://c2.staticflickr.com/8/7762/27399824891_5e9245b6d8_b.jpg) center center;
+	background-size: 100%;
+	position: relative;
+}
+.head4:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.3);
+}
+
+
+
+
+
+/*==================  sec 4-1  ================*/
+.s41{
+	width: 100%;
+}
+.s41_1_discription{
+	width: 90%;
+	margin: 0 5%;
+}
+.s41_1_discription p{
+	padding: 5px;
+	color:#444;
+}
+.s41_1_discription ul{
+	padding-left: 30px;	
+}
+.s41_1_discription li{
+	width: 100%;
+	float: left;
+	list-style-type:disc;	
+}
+.s41_1{
+	width: 90%;
+	margin: 0 5%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.s41_1box{
+	width: 100%;
+	height: 84px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.s41_1box.date,
+.s41_1box.locate,
+.s41_1box.species{
+	width: 47%;
+	margin: 0 0 0 3%;
+}
+.s41_1box.date + .s41_1box.date,
+.s41_1box.locate + .s41_1box.locate,
+.s41_1box.species + .s41_1box.species{
+	margin: 0 3% 0 0;
+}
+.s41_1box.locate.third , .s41_1box.species.third{
+	width: 100%;
+	margin: 0;
+}
+
+.s41_1box label, .s41_1box p{
+	display: block;
+	margin: auto;
+	padding: 10px 0 0 10px;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px 5%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type=text]:focus, select:focus{
+    border: 1px solid transparent;
+    outline: 2px solid #A0C2F9;
+}
+button.data_submit{
+	padding: 0;
+	border:none;
+	margin: 10px auto 0;
+}
+.active_select{
+	background-color: #0D6FB8;
+	color: #fff;
+}
+.active_select > option {
+	background-color: #fff;
+	color:black;
+}
+
+
+
+
+/*==================  sec chart  ================*/
+#svgcont{
+	width: 700px;
+	margin: 20px auto;
+}
+#svgcont svg{
+	width: 700px;
+	height: 300px;
+}
+
+.axis path,
+.axis line{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.mytext{
+    fill: white;
+    text-anchor: middle;
+}
+
+
+
+/*==================  sec map  ================*/
+#map{
+	margin: 20px auto;
+}
+.yellow_outline{
+	outline: 5px solid #F39800;
+}
+
+
+
+/*==================  sec 4-3  ================*/
+.s43{
+	width: 100%;
+}
+.s43_1{
+	width: 790px;
+	margin: auto;
+	font-size: 0;
+	padding-left: 10px;
+}
+.s43_1box{
+	width: 240px;
+	height: 240px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin: 10px;
+	overflow: hidden;
+}
+.s43_1box a{
+	position: relative;
+	left: -10%;
+	width: 120%;
+	height: 100%;
+}
+.s43_1box h3.album_name,
+.s43_1box p.album_info,
+.s43_1box h4.album_chinese,
+.s43_1box p.album_species{
+	display: block;
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transition: .5s;
+}
+.s43_1box h3.album_name{
+	line-height: 155px;
+	z-index: 5;
+	color:#fff;
+	background-color: rgba(0,0,0,.5);
+	font-weight: bold;	
+}
+.s43_1box p.album_info{
+	line-height: 205px;
+	z-index: 10;
+	color:#bbb;	
+}
+.s43_1box h4.album_chinese{
+	line-height: 275px;
+	z-index: 10;
+	color:#ddd;
+}
+.s43_1box p.album_species{
+	line-height: 325px;
+	z-index: 10;
+	color:#999;	
+}
+
+.s43_1box:hover h3.album_name{
+	line-height: 510px;
+	background-color: rgba(0,0,0,0);
+}
+.s43_1box:hover p.album_info,
+.s43_1box:hover h4.album_chinese,
+.s43_1box:hover p.album_species{
+	line-height: 510px;
+}
+
+} /*END of @media screen and (max-width: 767px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+.head4{
+	width: 100%;
+	height: 200px;
+	background:url(https://c2.staticflickr.com/8/7762/27399824891_5e9245b6d8_b.jpg) center center;
+	background-size: 100%;
+	position: relative;
+}
+.head4:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.3);
+}
+
+
+
+
+
+/*==================  sec 4-1  ================*/
+.s41{
+	width: 100%;
+}
+.s41_1_discription{
+	width: 80%;
+	margin: 0 10%;
+}
+.s41_1_discription p{
+	padding: 5px;
+	color:#444;
+}
+.s41_1_discription ul{
+	padding-left: 30px;	
+}
+.s41_1_discription li{
+	width: 100%;
+	float: left;
+	list-style-type:disc;	
+}
+.s41_1{
+	width: 80%;
+	margin: 0 10%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.s41_1box{
+	width: 50%;
+	height: 84px;
+	display: inline-block;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+.s41_1box:first-child{
+	margin-left: 1%;
+}
+.s41_1box.date,
+.s41_1box.locate,
+.s41_1box.species{
+	width: 23%;
+	margin: 0 0 0 1%;
+}
+.s41_1box.date + .s41_1box.date,
+.s41_1box.locate + .s41_1box.locate,
+.s41_1box.species + .s41_1box.species{
+	margin: 0 1% 0 0;
+}
+.s41_1box.locate.third , .s41_1box.species.third{
+	width: 50%;
+	margin: 0;
+}
+
+.s41_1box label, .s41_1box p{
+	display: block;
+	margin: auto;
+	padding: 10px 0 0 10px;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px 5%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type=text]:focus, select:focus{
+    border: 1px solid transparent;
+    outline: 2px solid #A0C2F9;
+}
+button.data_submit{
+	padding: 0;
+	border:none;
+	margin: 10px auto 0;
+}
+.active_select{
+	background-color: #0D6FB8;
+	color: #fff;
+}
+.active_select > option {
+	background-color: #fff;
+	color:black;
+}
+
+
+
+
+/*==================  sec chart  ================*/
+#svgcont{
+	width: 700px;
+	margin: 20px auto;
+}
+#svgcont svg{
+	width: 700px;
+	height: 300px;
+}
+
+.axis path,
+.axis line{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.mytext{
+    fill: white;
+    text-anchor: middle;
+}
+
+
+
+/*==================  sec map  ================*/
+#map{
+	margin: 20px auto;
+}
+.yellow_outline{
+	outline: 5px solid #F39800;
+}
+
+
+
+/*==================  sec 4-3  ================*/
+.s43{
+	width: 100%;
+}
+.s43_1{
+	width: 790px;
+	margin: auto;
+	font-size: 0;
+	padding-left: 10px;
+}
+.s43_1box{
+	width: 240px;
+	height: 240px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin: 10px;
+	overflow: hidden;
+}
+.s43_1box a{
+	position: relative;
+	left: -10%;
+	width: 120%;
+	height: 100%;
+}
+.s43_1box h3.album_name,
+.s43_1box p.album_info,
+.s43_1box h4.album_chinese,
+.s43_1box p.album_species{
+	display: block;
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transition: .5s;
+}
+.s43_1box h3.album_name{
+	line-height: 155px;
+	z-index: 5;
+	color:#fff;
+	background-color: rgba(0,0,0,.5);
+	font-weight: bold;	
+}
+.s43_1box p.album_info{
+	line-height: 205px;
+	z-index: 10;
+	color:#bbb;	
+}
+.s43_1box h4.album_chinese{
+	line-height: 275px;
+	z-index: 10;
+	color:#ddd;
+}
+.s43_1box p.album_species{
+	line-height: 325px;
+	z-index: 10;
+	color:#999;	
+}
+
+.s43_1box:hover h3.album_name{
+	line-height: 510px;
+	background-color: rgba(0,0,0,0);
+}
+.s43_1box:hover p.album_info,
+.s43_1box:hover h4.album_chinese,
+.s43_1box:hover p.album_species{
+	line-height: 510px;
+}
+
+} /*END of @media screen and (min-width: 768px) and (max-width: 991px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 992px){
+
+.head4{
+	width: 100%;
+	height: 200px;
+	background:url(https://c2.staticflickr.com/8/7762/27399824891_5e9245b6d8_b.jpg) center center;
+	background-size: 100%;
+	position: relative;
+}
+.head4:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.3);
+}
+
+
+
+
+
+/*==================  sec 4-1  ================*/
+.s41{
+	width: 960px;
+}
+.s41_1_discription{
+	width: 760px;
+	margin: auto;
+    padding: 20px;
+	margin-left: 80px;
+}
+.s41_1_discription p{
+	padding: 5px;
+	color:#444;
+}
+.s41_1_discription ul{
+	padding-left: 30px;	
+}
+.s41_1_discription li{
+	float: left;
+	padding-right: 50px;
+	list-style-type:disc;	
+}
+.s41_1{
+	width: 760px;
+	margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 20px 10px;
+    font-size: 0;
+	margin-left: 80px;
+}
+.s41_1box{
+	width: 400px;
+	height: 84px;
+	display: inline-block;
+	font-size: 16px;
+}
+.s41_1box.date{
+	width: 160px;
+}
+.s41_1box.locate , .s41_1box.species{
+	width: 200px;
+}
+.s41_1box.locate.third , .s41_1box.species.third{
+	width: 360px;
+}
+
+.s41_1box label, .s41_1box p{
+	display: block;
+	margin: auto;
+	padding: 10px 0 0 10px;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px 10px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type=text]:focus, select:focus{
+    border: 1px solid transparent;
+    outline: 2px solid #A0C2F9;
+}
+button.data_submit{
+	padding: 0;
+	border:none;
+	margin: 10px auto 0;
+}
+.active_select{
+	background-color: #0D6FB8;
+	color: #fff;
+}
+.active_select > option {
+	background-color: #fff;
+	color:black;
+}
+
+
+
+
+/*==================  sec chart  ================*/
+#svgcont{
+	width: 700px;
+	margin: 20px auto;
+}
+#svgcont svg{
+	width: 700px;
+	height: 300px;
+}
+
+.axis path,
+.axis line{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.mytext{
+    fill: white;
+    text-anchor: middle;
+}
+
+
+
+/*==================  sec map  ================*/
+#map{
+	margin: 20px auto;
+}
+.yellow_outline{
+	outline: 5px solid #F39800;
+}
+
+
+
+/*==================  sec 4-3  ================*/
+.s43{
+	width: 960px;
+}
+.s43_1{
+	width: 790px;
+	margin: auto;
+	font-size: 0;
+	padding-left: 10px;
+}
+.s43_1box{
+	width: 240px;
+	height: 240px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	margin: 10px;
+	overflow: hidden;
+}
+.s43_1box a{
+	position: relative;
+	left: -10%;
+	width: 120%;
+	height: 100%;
+}
+.s43_1box h3.album_name,
+.s43_1box p.album_info,
+.s43_1box h4.album_chinese,
+.s43_1box p.album_species{
+	display: block;
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transition: .5s;
+}
+.s43_1box h3.album_name{
+	line-height: 155px;
+	z-index: 5;
+	color:#fff;
+	background-color: rgba(0,0,0,.5);
+	font-weight: bold;	
+}
+.s43_1box p.album_info{
+	line-height: 205px;
+	z-index: 10;
+	color:#bbb;	
+}
+.s43_1box h4.album_chinese{
+	line-height: 275px;
+	z-index: 10;
+	color:#ddd;
+}
+.s43_1box p.album_species{
+	line-height: 325px;
+	z-index: 10;
+	color:#999;	
+}
+
+.s43_1box:hover h3.album_name{
+	line-height: 510px;
+	background-color: rgba(0,0,0,0);
+}
+.s43_1box:hover p.album_info,
+.s43_1box:hover h4.album_chinese,
+.s43_1box:hover p.album_species{
+	line-height: 510px;
+}
+
+} /*END of @media screen and (min-width: 992px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================    ================*/
+@media screen and (min-width: 1200px){
+
+
+
+} /*END of @media screen and (min-width: 1200px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

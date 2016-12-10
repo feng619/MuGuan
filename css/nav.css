@@ -1,0 +1,288 @@
+
+/*==================  nav  ================*/
+
+
+
+@media (max-width: 767px){
+
+nav{
+	width: 100%;
+	min-width: 320px;
+	height: 78px;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+nav:before{
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 78px;
+	z-index: 0;
+	background-color: rgba(0,0,0,.5);
+}
+nav .logo{
+	width: 221px;
+	height: 47px;
+	float: left;
+	padding: 15px 0 0 2%;	
+}
+
+#hambur{
+	width: 47px;
+	height: 47px;
+	display: block;
+	position: fixed;
+	top: 15px;
+	right: 2%;
+	z-index: 30;
+	text-align: center;
+}
+#hambur:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 28px;
+	height: 2px;
+	background-color: #bbb;
+	box-shadow: 0 -10px #bbb, 0 10px #bbb;
+	transition: .3s; /*  給他漢堡變成 X 的動畫  */
+}
+#hambur:after{
+	transition: .3s;
+}
+#hambur:hover:before{
+	background-color: #F39800;
+	box-shadow: 0 -10px #F39800, 0 10px #F39800;
+}
+#menu2_control:checked + nav #hambur:hover:before,
+#menu2_control:checked + nav #hambur:hover:after{
+	background-color: #F39800;
+}
+
+#menu2_control:checked + nav #hambur:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 28px;
+	height: 2px;
+	background-color: #bbb;
+	transform: rotateZ(45deg);
+	box-shadow: none;
+}
+#menu2_control:checked + nav #hambur:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 28px;
+	height: 2px;
+	background-color: #bbb;
+	transform: rotateZ(-45deg);
+	box-shadow: none;
+}
+
+.menu2{
+	width: 100%;
+	height: 336px;
+	background-color: rgba(0,0,0,.8);
+	display: block;
+	position: absolute;
+	top: 78px;
+	left: -100%;
+	transition: .3s;
+}
+#menu2_control:checked + nav .menu2{
+	left: 0px;
+}
+#menu2_control{
+	position: absolute;
+	opacity: 0;
+}
+
+nav .menu2 li a{
+	display: block;
+	line-height: 28px;
+	font-size: 18px;
+	padding: 10px 0 10px 42%;
+	color:#ccc;
+	vertical-align: middle;
+}
+nav .menu2 li a:hover{
+	color:#F39800; 
+}
+nav .menu2 li i{
+	vertical-align: middle;
+	padding-right: 8px;
+}
+
+nav .menu{
+	display: none;
+}
+
+
+} /*END of @media (max-width: 767px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================*/
+@media (min-width: 768px){
+
+nav{
+	width: 100%;
+	height: 78px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+nav:before{
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 78px;
+	z-index: 0;
+	background-color: rgba(0,0,0,.5);
+}
+nav .logo{
+	width: 221px;
+	height: 47px;
+	float: left;
+	padding: 15px 0 0 2%;	
+}
+
+#hambur{
+	display: none;
+}
+
+nav .menu{
+	width: 240px;
+	margin: 5px 0px;
+	position: absolute;
+	top: 0;
+	right: 2%;
+}
+nav .menu ul{
+	height: 28px;
+	display: block;
+	text-align: right;
+	font-size:0;
+}
+nav .menu ul.up{
+	border-bottom:1px solid rgba(150,150,150,.6);
+	padding: 3px 0 3px 0;
+}
+nav .menu ul.down{
+	padding: 4px 0;
+}
+nav ul li{
+	display: inline-block;
+	font-size:16px;
+	overflow: hidden;
+}
+nav ul li a{
+	display: block;
+	line-height: 28px;
+	font-size: 16px;
+	padding: 0 10px;
+	color:#ccc;
+	position: relative;
+	transition: color .5s;	
+}
+
+nav .menu ul.up .underline{
+	display: block;
+	position: relative;
+	left: 0%;
+	width: 0%;
+	height: 3px;
+	background-color: #F39800;	
+}
+nav .menu ul.up .acting+.underline {
+	width: 100%;
+}
+
+
+nav .menu ul.down li a:hover{
+	color:#F39800;
+	transition: color .5s;
+}
+
+.menu2{
+	display: none;
+}
+#menu2_control{
+	position: absolute;
+	opacity: 0;
+}
+
+
+} /*END of @media (min-width: 768px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================*/
+@media (min-width: 992px){
+
+
+
+} /*END of @media (min-width: 992px)*/
+
+
+
+
+
+/*========================================*/
+@media (min-width: 1200px){
+
+
+
+} /*END of @media (min-width: 1200px)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
